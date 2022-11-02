@@ -1,0 +1,26 @@
+---
+title: "Decentralized Non-Communicating Multiagent Collision Avoidance with Deep Reinforcement Learning"
+authors: "Yu Fan Chen, Miao Liu, Michael Everett, Jonathan P. How"
+venue: "IEEE International Conference on Robotics and Automation (ICRA)"
+year: "2017"
+status: "published"
+arxiv: "https://arxiv.org/pdf/1609.07845.pdf"
+official_link: "https://ieeexplore.ieee.org/abstract/document/7989037"
+doi: "10.1109/ICRA.2017.7989037"
+volume: "N/A"
+number: "N/A"
+pages: "285-292"
+publisher: ""
+month: "05"
+address: "Singapore"
+type: "conference"
+school: "N/A"
+awards: "Finalist: Best Multi-Robot Systems Paper"
+notes: ""
+include_on_website: true
+image: "cadrl_original.gif"
+links_to_code: "N/A"
+links_to_video: "https://youtu.be/BryJ9jeBkbU"
+collection: publications
+permalink: /publication/2017-05-Chen17_decentralized_ICRA.html
+---

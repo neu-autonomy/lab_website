@@ -1,5 +1,13 @@
 # NEU Autonomy Lab
 
+## TODOs
+
+- [x] publication page
+- [x] fix background image on home page
+- [x] join us page
+- [ ] research page
+- [ ] logo
+
 ## To run locally (not on GitHub Pages, to serve on your own computer)
 
 1. Clone the repository and made updates as detailed above
