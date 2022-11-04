@@ -11,7 +11,7 @@ email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Website of the NEU Autonomy Lab.
 baseurl: "/lab_website"
-url: "http://neu-autonomy.github.io"
+url: "https://neu-autonomy.github.io"
 
 include:
   - .htaccess
