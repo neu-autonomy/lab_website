@@ -5,8 +5,8 @@
 - [x] publication page
 - [x] fix background image on home page
 - [x] join us page
-- [ ] research page
-- [ ] logo
+- [x] research page
+- [x] logo
 
 ## To run locally (not on GitHub Pages, to serve on your own computer)
 
