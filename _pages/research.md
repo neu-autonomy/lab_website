@@ -1,14 +1,14 @@
 ---
-title: "NEU Autonomy Lab - Research"
+title: "Autonomy & Intelligence Lab at Northeastern University - Research"
 layout: textlay
-excerpt: "NEU Autonomy Lab -- Research"
+excerpt: "Autonomy & Intelligence Lab at Northeastern University -- Research"
 sitemap: false
 permalink: /research/
 ---
 
 # Research
 
-The NEU Autonomy Lab investigates a broad range of topics, including:
+The Autonomy & Intelligence Laboratory at Northeastern University investigates a broad range of topics, including:
 
 ## Certifiable Deep Learning
 
