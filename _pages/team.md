@@ -8,6 +8,8 @@ permalink: /team/
 
 # Group Members
 
+**We are looking to hire a talented postdoctoral researcher to begin in the May/June 2023 timeframe. Please see [this page]({{ site.url }}{{ site.baseurl }}/joinus) for info about how to apply!**
+
 **We are planning to hire multiple PhD students in the 2022-2023 cycle -- please consider applying to ECE or Khoury at Northeastern!**
 
 <!-- Jump to [staff](#staff), [master and bachelor students](#master-and-bachelor-students), [alumni](#alumni), [administrative support](#administrative-support), [lab visitors](#lab-visitors). -->
