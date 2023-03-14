@@ -79,9 +79,7 @@ permalink: /team/
 {% endif %}
 
 
-
-
-<!-- ## Master and Bachelor Students
+## Graduate Students
 {% assign number_printed = 0 %}
 {% for member in site.data.students %}
 
@@ -92,33 +90,21 @@ permalink: /team/
 {% endif %}
 
 <div class="col-sm-6 clearfix">
+  {% if member.photo %}
+  <img src="{{ site.url }}{{ site.baseurl }}/images/members/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
+  {% endif %}
+  
   <h4>{{ member.name }}</h4>
-  <i>{{ member.info }} <br>email: <{{ member.email }}></i>
-  <ul style="overflow: hidden">
-
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1 }} </li>
+  {% if member.degree == "ms" %}
+  <h5>MS Student</h5>
+  {% elsif member.degree == "phd" %}
+  <h5>PhD Student</h5>
   {% endif %}
 
-  {% if member.number_educ == 2 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
+  {% if member.personal_webpage %}
+  <h5><a href="{{member.personal_webpage}}" target="_blank">Personal Webpage</a></h5>
   {% endif %}
 
-  {% if member.number_educ == 3 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 4 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  {% endif %}
-
-  </ul>
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}
@@ -135,7 +121,7 @@ permalink: /team/
 {% endif %}
 
 
-## Alumni
+<!-- ## Alumni
 
 {% assign number_printed = 0 %}
 {% for member in site.data.alumni_members %}
@@ -192,9 +178,8 @@ permalink: /team/
 {% endfor %}
 </div>
 
-</div>
+</div> -->
 
 
-## Administrative Support
-<a href="mailto:Rijsewijk@Physics.LeidenUniv.nl">Ellie van Rijsewijk</a> is helping us (and other groups) with administration.
- -->
+<!-- ## Administrative Support
+<a href="mailto:Rijsewijk@Physics.LeidenUniv.nl">Ellie van Rijsewijk</a> is helping us (and other groups) with administration. -->
