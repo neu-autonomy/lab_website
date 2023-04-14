@@ -1,3 +1,15 @@
+# - name: Example PhD Student
+#   degree: phd
+#   photo: mfe.jpg
+#   personal_webpage: https://google.com
+#   research_interests: Neural Network Verification, Motion Planning, High-Speed Navigation
+
+# - name: Example MS Student
+#   degree: ms
+#   photo: mfe.jpg
+#   personal_webpage: https://google.com
+#   research_interests: Neural Network Verification, Motion Planning, High-Speed Navigation
+
 - name: Yash Mewada
   degree: ms
   photo: mewada.png
