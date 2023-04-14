@@ -18,3 +18,8 @@
 1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
 1. Run `bundle exec jekyll serve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
 
+## Update publications from MFE's webpage
+
+```bash
+rm -r ~/code/lab_website/_publications && cp -r ~/code/portfolio/_publications ~/code/lab_website && rm -r ~/code/lab_website/images/publications && cp -r ~/code/portfolio/images/publications ~/code/lab_website/images
+```

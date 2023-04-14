@@ -48,7 +48,7 @@
     {% if post.awards != "N/A" %}
       {% assign awards = post.awards | split: ", " %}
       {% for award in awards %}
-        <h5 style="color: green; margin-top: 10px; margin-bottom: 0px;">
+        <h5 style="color: green; font-weight: bold; margin-top: 10px; margin-bottom: 0px;">
           {{ award }}
         </h5>
       {% endfor %}
