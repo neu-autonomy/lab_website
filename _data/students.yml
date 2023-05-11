@@ -24,3 +24,10 @@
   degree: phd
   photo: pflueger.jpg
   personal_webpage: https://github.com/jeffBP
+
+- name: Zihao Dong
+  degree: phd
+  photo: zihao.jpg
+  # personal page to be updated. Working on github.io page
+  personal_webpage: https://www.linkedin.com/in/zihao-dong-321712212/
+  research_interests: Neural Network Verification, Navigation, and the intersection of both
