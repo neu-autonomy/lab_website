@@ -1,7 +1,7 @@
 ---
-title: "NEU Autonomy Lab - Home"
+title: "Autonomy & Intelligence Lab at Northeastern University - Home"
 layout: homelay
-excerpt: "NEU Autonomy Lab."
+excerpt: "Autonomy & Intelligence Lab at Northeastern University"
 sitemap: false
 permalink: /
 ---

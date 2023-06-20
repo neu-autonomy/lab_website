@@ -1,14 +1,14 @@
 ---
-title: "Allan Lab - Team"
+title: "Autonomy & Intelligence Lab at Northeastern University - Team"
 layout: gridlay
-excerpt: "Allan Lab: Team members"
+excerpt: "Autonomy & Intelligence Lab at Northeastern University - Team"
 sitemap: false
 permalink: /team/
 ---
 
 # Group Members
 
-**We are looking to hire a talented postdoctoral researcher to begin in the May/June 2023 timeframe. Please see [this page]({{ site.url }}{{ site.baseurl }}/joinus) for info about how to apply!**
+**We are looking to hire a talented postdoctoral researcher to begin in fall/winter 2023. Please see [this page]({{ site.url }}{{ site.baseurl }}/joinus) for info about how to apply!**
 
 <!-- **We are planning to hire multiple PhD students in the 2022-2023 cycle -- please consider applying to ECE or Khoury at Northeastern!** -->
 
