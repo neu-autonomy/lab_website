@@ -10,6 +10,11 @@
 #   personal_webpage: https://google.com
 #   research_interests: Neural Network Verification, Motion Planning, High-Speed Navigation
 
+- name: Sahasrajit Anantharamakrishnan
+  degree: ms
+  photo: SahasrajitAnantharamakrishnan.png
+  personal_webpage: https://github.com/Sahas-Ananth
+
 - name: Yash Mewada
   degree: ms
   photo: mewada.png
@@ -41,4 +46,3 @@
   degree: phd
   photo: estornell.jpg
   personal_webpage: https://github.com/Alexander-Estornell
-  
