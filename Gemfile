@@ -10,3 +10,4 @@ gem 'ipaddr'
 gem 'openssl'
 gem 'strscan'
 gem 'forwardable'
+gem "math", "~> 0.0.1"
