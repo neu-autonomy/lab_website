@@ -10,6 +10,12 @@
 #   personal_webpage: https://google.com
 #   research_interests: Neural Network Verification, Motion Planning, High-Speed Navigation
 
+# - name: Example UG Student
+#   degree: bs
+#   photo: mfe.jpg
+#   personal_webpage: https://google.com
+#   research_interests: Neural Network Verification, Motion Planning, High-Speed Navigation
+
 - name: Sahasrajit Anantharamakrishnan
   degree: ms
   photo: SahasrajitAnantharamakrishnan.png
@@ -20,10 +26,10 @@
   photo: mewada.png
   personal_webpage: https://yashmewada9618.github.io/
 
-- name: Anselm Mmaju
-  degree: ms
-  photo: mmaju.png
-  personal_webpage: https://github.com/Tuachi
+# - name: Anselm Mmaju
+#   degree: ms
+#   photo: mmaju.png
+#   personal_webpage: https://github.com/Tuachi
 
 - name: Jeff Pflueger
   degree: phd
