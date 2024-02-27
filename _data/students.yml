@@ -52,3 +52,9 @@
   degree: phd
   photo: estornell.jpg
   personal_webpage: https://github.com/Alexander-Estornell
+
+- name: Omkar Sargar
+  degree: ms
+  photo: omkar.jpg
+  personal_webpage: https://github.com/OSSome01
+  research_interests: Perception and Navigation
