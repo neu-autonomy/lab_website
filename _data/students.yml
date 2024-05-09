@@ -19,7 +19,7 @@
 - name: Sahasrajit Anantharamakrishnan
   degree: ms
   photo: SahasrajitAnantharamakrishnan.png
-  personal_webpage: https://github.com/Sahas-Ananth
+  personal_webpage: https://sahas-ananth.github.io/
 
 - name: Yash Mewada
   degree: ms
@@ -52,3 +52,9 @@
   degree: phd
   photo: estornell.jpg
   personal_webpage: https://github.com/Alexander-Estornell
+
+- name: Omkar Sargar
+  degree: ms
+  photo: omkar.jpg
+  personal_webpage: https://github.com/OSSome01
+  research_interests: Perception and Navigation
