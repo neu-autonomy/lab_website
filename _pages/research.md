@@ -25,10 +25,11 @@ Learning-based methods could provide solutions to many of the long-standing chal
 
 
 #### Sample publications:
+- Dong, Zihao, Shayegan Omidshafiei, and Michael Everett. "Collision Avoidance Verification of Multiagent Systems With Learned Policies." IEEE Control Systems Letters (2024).
+- Rober, Nicholas, Sydney M. Katz, Chelsea Sidrane, Esen Yel, Michael Everett, Mykel J. Kochenderfer, and Jonathan P. How. "Backward reachability analysis of neural feedback loops: Techniques for linear and nonlinear systems." IEEE Open Journal of Control Systems 2 (2023): 108-124.
 - Everett, Michael. "Neural Network Verification in Control." In 2021 60th IEEE Conference on Decision and Control (CDC), pp. 6326-6340. IEEE, 2021.
 - Everett, Michael, Björn Lütjens, and Jonathan P. How. "Certifiable robustness to adversarial state uncertainty in deep reinforcement learning." IEEE Transactions on Neural Networks and Learning Systems (2021).
 - Everett, Michael, Golnaz Habibi, Chuangchuang Sun, and Jonathan P. How. "Reachability analysis of neural feedback loops." IEEE Access 9 (2021): 163938-163953.
-- Rober, Nicholas, Sydney M. Katz, Chelsea Sidrane, Esen Yel, Michael Everett, Mykel J. Kochenderfer, and Jonathan P. How. "Backward Reachability Analysis of Neural Feedback Loops: Techniques for Linear and Nonlinear Systems." arXiv preprint arXiv:2209.14076 (2022).
 
 ## High-Speed, Off-Road Autonomy
 
@@ -44,12 +45,14 @@ Learning-based methods could provide solutions to many of the long-standing chal
 </div>
 
 #### Sample publications:
-- Everett, Michael, Justin Miller, and Jonathan P. How. "Planning beyond the sensing horizon using a learned context." In 2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 1064-1071. IEEE, 2019.
+- Dong, Zihao, Jeff Pflueger, Leonard Jung, David Thorne, Philip R. Osteen, Christa S. Robison, Brett T. Lopez, Michael Everett. "LiDAR Inertial Odometry And Mapping
+Using Learned Registration-Relevant Features." 2024 [Arxiv](https://arxiv.org/pdf/2410.02961)
+- Cai, Xiaoyi, Siddharth Ancha, Lakshay Sharma, Philip R. Osteen, Bernadette Bucher, Stephen Phillips, Jiuguang Wang, Michael Everett, Nicholas Roy, and Jonathan P. How. "Evora: Deep evidential traversability learning for risk-aware off-road autonomy." IEEE Transactions on Robotics (2024).
+- Cai, Xiaoyi, Michael Everett, Lakshay Sharma, Philip R. Osteen, and Jonathan P. How. "Probabilistic traversability model for risk-aware motion planning in off-road environments." In 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 11297-11304. IEEE, 2023.
+- Sharma, Lakshay, Michael Everett, Donggun Lee, Xiaoyi Cai, Philip Osteen, and Jonathan P. How. "Ramp: A risk-aware mapping and planning pipeline for fast off-road ground robot navigation." In 2023 IEEE International Conference on Robotics and Automation (ICRA), pp. 5730-5736. IEEE, 2023.
+- Cai, Xiaoyi, Michael Everett, Jonathan Fink, and Jonathan P. How. "Risk-aware off-road navigation via a learned speed distribution map." In 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 2931-2937. IEEE, 2022.
 - Tordesillas, Jesus, Brett T. Lopez, Michael Everett, and Jonathan P. How. "FASTER: Fast and safe trajectory planner for navigation in unknown environments." IEEE Transactions on Robotics 38, no. 2 (2021): 922-938.
-- Cai, Xiaoyi, Michael Everett, Jonathan Fink, and Jonathan P. How. "Risk-Aware Off-Road Navigation via a Learned Speed Distribution Map." arXiv preprint arXiv:2203.13429 (2022).
-- Sharma, Lakshay, Michael Everett, Donggun Lee, Xiaoyi Cai, Philip Osteen, and Jonathan P. How. "RAMP: A Risk-Aware Mapping and Planning Pipeline for Fast Off-Road Ground Robot Navigation." arXiv preprint arXiv:2210.06605 (2022).
-- Cai, Xiaoyi, Michael Everett, Lakshay Sharma, Philip R. Osteen, and Jonathan P. How. "Probabilistic Traversability Model for Risk-Aware Motion Planning in Off-Road Environments." arXiv preprint arXiv:2210.00153 (2022).
-
+- Everett, Michael, Justin Miller, and Jonathan P. How. "Planning beyond the sensing horizon using a learned context." In 2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 1064-1071. IEEE, 2019.
 
 ## Autonomy in Human Environments
 
@@ -64,8 +67,8 @@ Learning-based methods could provide solutions to many of the long-standing chal
 </div>
 
 #### Sample publications:
+- Francis, Anthony, Claudia Pérez-d'Arpino, Chengshu Li, Fei Xia, Alexandre Alahi, Rachid Alami, Aniket Bera et al. "Principles and guidelines for evaluating social robot navigation algorithms." ACM Transactions on Human-Robot Interaction (to appear), 2024.
+- Brito, Bruno, Michael Everett, Jonathan P. How, and Javier Alonso-Mora. "Where to go next: learning a subgoal recommendation policy for navigation in dynamic environments." IEEE Robotics and Automation Letters 6, no. 3 (2021): 4616-4623.
 - Everett, Michael, Yu Fan Chen, and Jonathan P. How. "Collision avoidance in pedestrian-rich environments with deep reinforcement learning." IEEE Access 9 (2021): 10357-10377.
 - Chen, Yu Fan, Michael Everett, Miao Liu, and Jonathan P. How. "Socially aware motion planning with deep reinforcement learning." In 2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 1343-1350. IEEE, 2017.
-- Brito, Bruno, Michael Everett, Jonathan P. How, and Javier Alonso-Mora. "Where to go next: learning a subgoal recommendation policy for navigation in dynamic environments." IEEE Robotics and Automation Letters 6, no. 3 (2021): 4616-4623.
-
 
