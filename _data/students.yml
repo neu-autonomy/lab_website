@@ -59,6 +59,13 @@
   photo: estornell.jpg
   personal_webpage: https://github.com/Alexander-Estornell
 
+- name: Hanna Jiamei Zhang
+  degree: phd
+  photo: hanna.jpg
+  # personal webpage to be updated
+  personal_webpage: https://hanjzh.github.io/
+  research_interests: Neural Network Verification, Safe Autonomy, Semidefinite Programming
+  
 - name: Omkar Sargar
   degree: ms
   photo: omkar.jpg

@@ -1,0 +1,558 @@
+have_header: checking for sys/utsname.h... -------------------- yes
+
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-3.0  -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+"x86_64-linux-gnu-gcc -E -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/utsname.h>
+/* end */
+
+--------------------
+
+have_library: checking for getpwnam() in -lsun... -------------------- no
+
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-3.0 -lsun  -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:14:57: error: ‘getpwnam’ undeclared (first use in this function)
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))getpwnam; return !p; }
+      |                                                         ^~~~~~~~
+conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))getpwnam; return !p; }
+/* end */
+
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-3.0 -lsun  -lm   -lc"
+/usr/bin/ld: cannot find -lsun: No such file or directory
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void getpwnam();
+15: int t(void) { getpwnam(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for uname((struct utsname *)NULL) in sys/utsname.h... -------------------- yes
+
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-3.0  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/utsname.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: 
+17: int t(void) { uname((struct utsname *)NULL); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for getlogin()... -------------------- yes
+
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-3.0  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))getlogin; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for getpwent()... -------------------- yes
+
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-3.0  -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:14:57: error: ‘getpwent’ undeclared (first use in this function); did you mean ‘getpt’?
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))getpwent; return !p; }
+      |                                                         ^~~~~~~~
+      |                                                         getpt
+conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))getpwent; return !p; }
+/* end */
+
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-3.0  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void getpwent();
+15: int t(void) { getpwent(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for getgrent()... -------------------- yes
+
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-3.0  -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:14:57: error: ‘getgrent’ undeclared (first use in this function); did you mean ‘getenv’?
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))getgrent; return !p; }
+      |                                                         ^~~~~~~~
+      |                                                         getenv
+conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))getgrent; return !p; }
+/* end */
+
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-3.0  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void getgrent();
+15: int t(void) { getgrent(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for sysconf()... -------------------- yes
+
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-3.0  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))sysconf; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for confstr()... -------------------- yes
+
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-3.0  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))confstr; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for fpathconf()... -------------------- yes
+
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-3.0  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))fpathconf; return !p; }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_gecos in pwd.h... -------------------- yes
+
+"x86_64-linux-gnu-gcc -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <pwd.h>
+ 4: 
+ 5: /*top*/
+ 6: int s = (char *)&((struct passwd*)0)->pw_gecos - (char *)0;
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   return !!argv[argc];
+10: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_change in pwd.h... -------------------- no
+
+"x86_64-linux-gnu-gcc -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC   -c conftest.c"
+conftest.c:6:37: error: ‘struct passwd’ has no member named ‘pw_change’
+    6 | int s = (char *)&((struct passwd*)0)->pw_change - (char *)0;
+      |                                     ^~
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <pwd.h>
+ 4: 
+ 5: /*top*/
+ 6: int s = (char *)&((struct passwd*)0)->pw_change - (char *)0;
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   return !!argv[argc];
+10: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_quota in pwd.h... -------------------- no
+
+"x86_64-linux-gnu-gcc -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC   -c conftest.c"
+conftest.c:6:37: error: ‘struct passwd’ has no member named ‘pw_quota’
+    6 | int s = (char *)&((struct passwd*)0)->pw_quota - (char *)0;
+      |                                     ^~
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <pwd.h>
+ 4: 
+ 5: /*top*/
+ 6: int s = (char *)&((struct passwd*)0)->pw_quota - (char *)0;
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   return !!argv[argc];
+10: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_age in pwd.h... -------------------- no
+
+"x86_64-linux-gnu-gcc -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC   -c conftest.c"
+conftest.c:6:39: error: ‘struct passwd’ has no member named ‘pw_age’; did you mean ‘pw_name’?
+    6 | int s = (char *)&((struct passwd*)0)->pw_age - (char *)0;
+      |                                       ^~~~~~
+      |                                       pw_name
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <pwd.h>
+ 4: 
+ 5: /*top*/
+ 6: int s = (char *)&((struct passwd*)0)->pw_age - (char *)0;
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   return !!argv[argc];
+10: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_class in pwd.h... -------------------- no
+
+"x86_64-linux-gnu-gcc -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC   -c conftest.c"
+conftest.c:6:37: error: ‘struct passwd’ has no member named ‘pw_class’
+    6 | int s = (char *)&((struct passwd*)0)->pw_class - (char *)0;
+      |                                     ^~
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <pwd.h>
+ 4: 
+ 5: /*top*/
+ 6: int s = (char *)&((struct passwd*)0)->pw_class - (char *)0;
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   return !!argv[argc];
+10: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_comment in pwd.h... -------------------- no
+
+"x86_64-linux-gnu-gcc -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC   -c conftest.c"
+conftest.c:6:37: error: ‘struct passwd’ has no member named ‘pw_comment’
+    6 | int s = (char *)&((struct passwd*)0)->pw_comment - (char *)0;
+      |                                     ^~
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <pwd.h>
+ 4: 
+ 5: /*top*/
+ 6: int s = (char *)&((struct passwd*)0)->pw_comment - (char *)0;
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   return !!argv[argc];
+10: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_expire in pwd.h... -------------------- no
+
+"x86_64-linux-gnu-gcc -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC   -c conftest.c"
+conftest.c:6:37: error: ‘struct passwd’ has no member named ‘pw_expire’
+    6 | int s = (char *)&((struct passwd*)0)->pw_expire - (char *)0;
+      |                                     ^~
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <pwd.h>
+ 4: 
+ 5: /*top*/
+ 6: int s = (char *)&((struct passwd*)0)->pw_expire - (char *)0;
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   return !!argv[argc];
+10: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_passwd in pwd.h... -------------------- yes
+
+"x86_64-linux-gnu-gcc -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <pwd.h>
+ 4: 
+ 5: /*top*/
+ 6: int s = (char *)&((struct passwd*)0)->pw_passwd - (char *)0;
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   return !!argv[argc];
+10: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct group.gr_passwd in grp.h... -------------------- yes
+
+"x86_64-linux-gnu-gcc -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <grp.h>
+ 4: 
+ 5: /*top*/
+ 6: int s = (char *)&((struct group*)0)->gr_passwd - (char *)0;
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   return !!argv[argc];
+10: }
+/* end */
+
+--------------------
+
+have_func: checking for rb_deprecate_constant(Qnil, "None")... -------------------- yes
+
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-3.0  -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:15:15: warning: implicit declaration of function ‘rb_deprecate_constant’ [-Wimplicit-function-declaration]
+   15 | int t(void) { rb_deprecate_constant(Qnil, "None"); return 0; }
+      |               ^~~~~~~~~~~~~~~~~~~~~
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: 
+15: int t(void) { rb_deprecate_constant(Qnil, "None"); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_io_descriptor()... -------------------- no
+
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-3.0  -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:14:57: error: ‘rb_io_descriptor’ undeclared (first use in this function)
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_io_descriptor; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~
+conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_io_descriptor; return !p; }
+/* end */
+
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-3.0.0 -I/usr/include/ruby-3.0.0/ruby/backward -I/usr/include/ruby-3.0.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby3.0-An8Hc0/ruby3.0-3.0.2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-3.0  -lm   -lc"
+/usr/bin/ld: /tmp/ccEou64Q.o: in function `t':
+/home/hanna/Documents/lab_website/vendor/bundle/ruby/3.0.0/gems/etc-1.4.3/ext/etc/conftest.c:15: undefined reference to `rb_io_descriptor'
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void rb_io_descriptor();
+15: int t(void) { rb_io_descriptor(); return 0; }
+/* end */
+
+--------------------
+
