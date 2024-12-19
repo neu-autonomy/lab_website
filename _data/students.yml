@@ -48,11 +48,24 @@
   photo: leonardjung.jpg
   personal_webpage: https://github.com/leonardjmihs
 
+- name: Alenna Spiro
+  degree: phd
+  photo: alenna.webp
+  personal_webpage: https://github.com/neu-autonomy/lab_website.git
+  research_interests: Perception, Developmental Robotics, Reinforcement Learning
+
 - name: Alexander Estornell
   degree: phd
   photo: estornell.jpg
   personal_webpage: https://github.com/Alexander-Estornell
 
+- name: Hanna Jiamei Zhang
+  degree: phd
+  photo: hanna.jpg
+  # personal webpage to be updated
+  personal_webpage: https://hanjzh.github.io/
+  research_interests: Neural Network Verification, Safe Autonomy, Semidefinite Programming
+  
 - name: Omkar Sargar
   degree: ms
   photo: omkar.jpg
