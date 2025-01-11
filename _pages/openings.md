@@ -13,7 +13,6 @@ Prof. Everett gets many emails from applicants but is unable to respond to them 
 Instead, the following forms will help us get to know your background and interests in a more organized way.
 
 ## Prospective Postdoctoral Researchers
-We are currently looking for a postdoc to join the group, nominally starting in fall-winter 2023.
 Interested applicants should send an email to Prof. Everett with a CV, links to 3 representative publications, and the names/emails of 3 references.
 <!-- There is not currently an open postdoc position, but this could change soon. Please fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSdIS_trNtk6RdGA2UUJzWI39IKX3i6AqW5a4rtFSCeg9O13bA/viewform?usp=sf_link) to help us get to know you. -->
 
