@@ -78,6 +78,44 @@ permalink: /team/
 </div>
 {% endif %}
 
+## Postdoctoral Researchers
+{% assign number_printed = 0 %}
+{% for member in site.data.postdocs %}
+
+{% assign even_odd = number_printed | modulo: 2 %}
+
+{% if even_odd == 0 %}
+<div class="row">
+{% endif %}
+
+<div class="col-sm-6 clearfix">
+{% if member.photo %}
+<img src="{{ site.url }}{{ site.baseurl }}/images/members/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
+{% endif %}
+<h4>{{ member.name }}</h4>
+
+{% if member.personal_webpage %}
+<h5><a href="{{member.personal_webpage}}" target="_blank">Personal Webpage</a></h5>
+{% endif %}
+
+{% if member.research_interests %}
+<h5>Research Interests: {{member.research_interests}}</h5>
+{% endif %}
+</div>
+
+{% assign number_printed = number_printed | plus: 1 %}
+
+{% if even_odd == 1 %}
+</div>
+{% endif %}
+
+{% endfor %}
+
+{% assign even_odd = number_printed | modulo: 2 %}
+{% if even_odd == 1 %}
+</div>
+{% endif %}
+
 
 ## PhD Students
 {% assign number_printed = 0 %}
