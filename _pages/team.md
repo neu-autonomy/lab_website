@@ -8,7 +8,7 @@ permalink: /team/
 
 # Group Members
 
-**We are looking to hire a talented postdoctoral researcher. Please see [this page]({{ site.url }}{{ site.baseurl }}/joinus) for info about how to apply!**
+<!-- **We are looking to hire a talented postdoctoral researcher. Please see [this page]({{ site.url }}{{ site.baseurl }}/joinus) for info about how to apply!** -->
 
 <!-- **We are planning to hire multiple PhD students in the 2022-2023 cycle -- please consider applying to ECE or Khoury at Northeastern!** -->
 

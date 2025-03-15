@@ -45,8 +45,7 @@ Learning-based methods could provide solutions to many of the long-standing chal
 </div>
 
 #### Sample publications:
-- Dong, Zihao, Jeff Pflueger, Leonard Jung, David Thorne, Philip R. Osteen, Christa S. Robison, Brett T. Lopez, Michael Everett. "LiDAR Inertial Odometry And Mapping
-Using Learned Registration-Relevant Features." 2024 [Arxiv](https://arxiv.org/pdf/2410.02961)
+- Dong, Zihao, Jeff Pflueger, Leonard Jung, David Thorne, Philip R. Osteen, Christa S. Robison, Brett T. Lopez, Michael Everett. "LiDAR Inertial Odometry And Mapping Using Learned Registration-Relevant Features." 2024 [Arxiv](https://arxiv.org/pdf/2410.02961)
 - Cai, Xiaoyi, Siddharth Ancha, Lakshay Sharma, Philip R. Osteen, Bernadette Bucher, Stephen Phillips, Jiuguang Wang, Michael Everett, Nicholas Roy, and Jonathan P. How. "Evora: Deep evidential traversability learning for risk-aware off-road autonomy." IEEE Transactions on Robotics (2024).
 - Cai, Xiaoyi, Michael Everett, Lakshay Sharma, Philip R. Osteen, and Jonathan P. How. "Probabilistic traversability model for risk-aware motion planning in off-road environments." In 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 11297-11304. IEEE, 2023.
 - Sharma, Lakshay, Michael Everett, Donggun Lee, Xiaoyi Cai, Philip Osteen, and Jonathan P. How. "Ramp: A risk-aware mapping and planning pipeline for fast off-road ground robot navigation." In 2023 IEEE International Conference on Robotics and Automation (ICRA), pp. 5730-5736. IEEE, 2023.
@@ -67,7 +66,7 @@ Using Learned Registration-Relevant Features." 2024 [Arxiv](https://arxiv.org/pd
 </div>
 
 #### Sample publications:
-- Francis, Anthony, Claudia Pérez-d'Arpino, Chengshu Li, Fei Xia, Alexandre Alahi, Rachid Alami, Aniket Bera et al. "Principles and guidelines for evaluating social robot navigation algorithms." ACM Transactions on Human-Robot Interaction (to appear), 2024.
+- Francis, Anthony, Claudia Pérez-d'Arpino, Chengshu Li, Fei Xia, Alexandre Alahi, Rachid Alami, Aniket Bera et al. "Principles and guidelines for evaluating social robot navigation algorithms." ACM Transactions on Human-Robot Interaction, 2025.
 - Brito, Bruno, Michael Everett, Jonathan P. How, and Javier Alonso-Mora. "Where to go next: learning a subgoal recommendation policy for navigation in dynamic environments." IEEE Robotics and Automation Letters 6, no. 3 (2021): 4616-4623.
 - Everett, Michael, Yu Fan Chen, and Jonathan P. How. "Collision avoidance in pedestrian-rich environments with deep reinforcement learning." IEEE Access 9 (2021): 10357-10377.
 - Chen, Yu Fan, Michael Everett, Miao Liu, and Jonathan P. How. "Socially aware motion planning with deep reinforcement learning." In 2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 1343-1350. IEEE, 2017.
