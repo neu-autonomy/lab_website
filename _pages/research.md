@@ -25,6 +25,8 @@ Learning-based methods could provide solutions to many of the long-standing chal
 
 
 #### Sample publications:
+- Estornell, Alexander, Leonard Jung, and Michael Everett. "Verification of Visual Controllers via Compositional Geometric Transformations." arXiv preprint arXiv:2507.04523 (2025).
+- Chaudhury, Puja, Alexander Estornell, and Michael Everett. "Learning Verifiable Control Policies Using Relaxed Verification." IEEE Conference on Decision and Control (CDC), 2025 (to appear).
 - Dong, Zihao, Shayegan Omidshafiei, and Michael Everett. "Collision Avoidance Verification of Multiagent Systems With Learned Policies." IEEE Control Systems Letters (2024).
 - Rober, Nicholas, Sydney M. Katz, Chelsea Sidrane, Esen Yel, Michael Everett, Mykel J. Kochenderfer, and Jonathan P. How. "Backward reachability analysis of neural feedback loops: Techniques for linear and nonlinear systems." IEEE Open Journal of Control Systems 2 (2023): 108-124.
 - Everett, Michael. "Neural Network Verification in Control." In 2021 60th IEEE Conference on Decision and Control (CDC), pp. 6326-6340. IEEE, 2021.
@@ -45,7 +47,9 @@ Learning-based methods could provide solutions to many of the long-standing chal
 </div>
 
 #### Sample publications:
-- Dong, Zihao, Jeff Pflueger, Leonard Jung, David Thorne, Philip R. Osteen, Christa S. Robison, Brett T. Lopez, Michael Everett. "LiDAR Inertial Odometry And Mapping Using Learned Registration-Relevant Features." 2024 [Arxiv](https://arxiv.org/pdf/2410.02961)
+- Dong, Zihao, Alan Papalia, Leonard Jung, Alenna Spiro, Philip R. Osteen, Christa S. Robison, and Michael Everett. "Learning Smooth State-Dependent Traversability from Dense Point Clouds." (2025) [Arxiv](https://arxiv.org/pdf/2506.04362).
+- Jung, Leonard, Alexander Estornell, and Michael Everett. "Contingency Constrained Planning with MPPI within MPPI." Learning for Dynamics and Control (L4DC), 2025.
+- Dong, Zihao, Jeff Pflueger, Leonard Jung, David Thorne, Philip R. Osteen, Christa S. Robison, Brett T. Lopez, Michael Everett. "LiDAR Inertial Odometry And Mapping Using Learned Registration-Relevant Features." In 2025 IEEE International Conference on Robotics and Automation (ICRA) 2025. [Arxiv](https://arxiv.org/pdf/2410.02961)
 - Cai, Xiaoyi, Siddharth Ancha, Lakshay Sharma, Philip R. Osteen, Bernadette Bucher, Stephen Phillips, Jiuguang Wang, Michael Everett, Nicholas Roy, and Jonathan P. How. "Evora: Deep evidential traversability learning for risk-aware off-road autonomy." IEEE Transactions on Robotics (2024).
 - Cai, Xiaoyi, Michael Everett, Lakshay Sharma, Philip R. Osteen, and Jonathan P. How. "Probabilistic traversability model for risk-aware motion planning in off-road environments." In 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 11297-11304. IEEE, 2023.
 - Sharma, Lakshay, Michael Everett, Donggun Lee, Xiaoyi Cai, Philip Osteen, and Jonathan P. How. "Ramp: A risk-aware mapping and planning pipeline for fast off-road ground robot navigation." In 2023 IEEE International Conference on Robotics and Automation (ICRA), pp. 5730-5736. IEEE, 2023.
