@@ -65,7 +65,7 @@
   # personal webpage to be updated
   personal_webpage: https://hanjzh.github.io/
   research_interests: Neural Network Verification, Safe Autonomy, Semidefinite Programming
-  
+
 - name: Omkar Sargar
   degree: ms
   photo: omkar.jpg
@@ -77,11 +77,6 @@
   photo: austin.png
   personal_webpage: https://linkedin.com/in/austin-hwang18
 
-- name: Tae Yang
-  degree: bs
-  photo: 
-  personal_webpage: 
-
 - name: Bishoy Galoaa
   degree: ms
   photo: bishoy.jpg
@@ -90,4 +85,13 @@
 - name: Nikolas Sanderson
   degree: bs
   photo: nik.png
-  personal_webpage: https://linkedin.com/in/niksand 
+  personal_webpage: https://linkedin.com/in/niksand
+
+- name: Min-Hong Shih (Matt)
+  degree: bs
+  photo: matt.jpeg
+  personal_webpage: https://linkedin.com/in/minhong-shih-neu
+- name: Tae Yang
+  degree: bs
+  photo:
+  personal_webpage:
