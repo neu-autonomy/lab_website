@@ -11,5 +11,3 @@ gem 'openssl'
 gem 'strscan'
 gem 'forwardable'
 gem "math", "~> 0.0.1"
-
-gem "webrick", "~> 1.9"
